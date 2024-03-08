@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(loginbg.avif) center / cover no-repeat;
+}
+
+.login-popup {
+    position: fixed;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    border: 2px solid #fff;
+    width: 100%;
+    max-width: 720px;
+    transform: translate(-50%, -50%);
+}
+
+.login-popup .login-container {
+    display: flex;
+}
+
+.login-container .login-details {
+    max-width: 330px;
+    width: 100%;
+    height: 45vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: url(loginbg.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-container .login-content {
+    width: 100%;
+    padding: 50px;
+}
+
+form .input-field {
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+}
+
+form .input-field i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+form .input-field input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 0.95rem;
+    padding: 0 15px;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+ 
+.input-field input:focus {
+    border-color: rgb(106, 175, 175);
+}
+
+.input-field input:is(:focus, :valid)  {
+    padding: 16px 15px 0;
+}
+
+form .input-field label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    color: grey;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) ~ label {
+    color: rgb(100, 160, 160);
+    font-size: 0.75rem;
+    transform: translateY(-120%);
+}
+
+.login-container a {
+    color: rgb(72, 119, 119);
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+.login-container .forgot-pass {
+    display: inline-flex;
+    margin-top: 14px;
+    font-size: 0.95rem;
+}
+
+form button {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 0;
+    border-radius: 3px;
+    margin: 25px 0;
+    color: #fff;
+    cursor: pointer;
+    background: rgb(79, 125, 136);
+    transition: 0.2s ease;
+}
+
+form button:hover {
+    background: rgb(102, 165, 180);
+}

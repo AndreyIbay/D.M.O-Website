@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>D.M.O</title>
+        <link rel="Stylesheet" href="loginpage.css">
+        <script src="loginpage.js"></script>
+        <script src="https://kit.fontawesome.com/7b1ce9f98a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="login-popup">
+        <div class="login-container">
+            <div class="login-details">
+                <h2>Welcome to D.M.O</h2>
+                <p>Welcome to our Digital Multi-purpose Organizer(D.M.O).</p>
+            </div>
+            <div class="login-content">
+                <h2>LOGIN</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" id="user" required>
+                        <label>Email</label>
+                    </div>
+        
+                    <div class="input-field">
+                        <input type="password" id="password" required>
+                        <i class="fa-regular fa-eye-slash" id="showpass"></i>  
+                        <label>Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass">Forgot password?</a>
+                    <button type="button" onclick="enter()">Log In</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
