@@ -1,0 +1,25 @@
+.content-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.add-subject-button{
+    margin-top: 50px;
+    padding: 10px 25px 10px 25px;
+    
+    border-radius: 50px 50px 50px 50px;
+    border-color: transparent;
+    justify-content: flex-start;
+}
+.subject-container{
+    margin-top: 50px;
+    background-color: #ffffffff;
+    padding: 40px 100px;
+    
+    box-shadow: 1px 10px 40px 1px rgba(168, 137, 32, 0.466);
+    border-radius: 30px 30px 30px 30px;
+}
+.input-subject{
+    display: flex;
+    justify-items: flex-start;
+}

@@ -1,0 +1,38 @@
+.navbar-container{
+    background-color: #ffffff;
+    margin: 0;
+    padding: 15px;
+    box-shadow: 1px 1px 40px 1px rgba(168, 137, 32, 0.466);
+    
+}
+.left-elements{
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 50px;
+}
+
+.right-elements{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+button{
+    cursor: pointer;
+}
+
+.nav-button{
+    padding: 10px 25px 10px 25px;
+    margin-left: 10px;
+    border-radius: 50px 50px 50px 50px;
+    border-color: transparent;
+}
+.home-button{
+    
+    border: transparent;
+    background-color: transparent;
+    padding: 10px 25px 10px 25px;
+}
+
+
+
