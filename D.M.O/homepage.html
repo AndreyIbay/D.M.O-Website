@@ -13,6 +13,10 @@
         
     </style>
     <script src="https://kit.fontawesome.com/58433d017e.js" crossorigin="anonymous"></script>
+    <!--JQUERY-->
+    <script src="homepage.js"></script>
+    <script src="jquery.js"></script>
+    
 </head>
 <body>
     <!--Contains the whole page-->
@@ -33,16 +37,21 @@
         </div>
         <!--Main-->
         <div class="content-container">
-            <div class="left-content">
-                <button class="add-subject-button">Add new subject</button>
+            <div class="modal-add">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim impedit hic fuga saepe! Dolor pariatur quibusdam alias dicta eum, consectetur unde quia rem ratione illum odio corporis modi ea est.</p>
             </div>
+            <div class="left-content">
+                <button class="add-subject-button" onclick="opensubject()">Add new subject</button>
+            </div>
+            
             <div class="subject-container">
-                <input type="text" class="input-subject">
+                <input type="text" class="input-subject" placeholder="Add Subject Name">
+                
                 <h1>eyy</h1>
                 <!--insert subject div here-->
                 <div class="right-text"></div>
             </div>
-            
+           
         </div>
         <div class="footer"></div>
     </div>

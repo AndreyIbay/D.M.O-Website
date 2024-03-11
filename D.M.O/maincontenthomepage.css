@@ -1,7 +1,23 @@
+:root{
+    --yellow1: rgb(252, 237, 162);
+    --pink1: rgb(221, 125, 245);
+    
+    --peach: rgb(252, 220, 162);
+    --purple: rgb(173, 125, 245);
+
+    --lightorange: rgb(252, 200, 162);
+    --magenta: rgb(238, 125, 245);
+}
+
+
+
+
 .content-container{
     display: flex;
     align-items: center;
     flex-direction: column;
+    z-index: -1;
+    position: relative;
 }
 .add-subject-button{
     margin-top: 50px;
@@ -14,12 +30,36 @@
 .subject-container{
     margin-top: 50px;
     background-color: #ffffffff;
-    padding: 40px 100px;
-    
+    padding: 40px 40px;
+    width: 90vh;
     box-shadow: 1px 10px 40px 1px rgba(168, 137, 32, 0.466);
     border-radius: 30px 30px 30px 30px;
 }
 .input-subject{
-    display: flex;
-    justify-items: flex-start;
+    
+   
+}
+
+
+
+/*MODAL---------------------*/
+.modal-add{
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+    
+
+    
+
+    z-index: 0;
+    background-color: #ffffffff;
+    padding: 40px 40px;
+    width: 90vh;
+    box-shadow: 1px 10px 40px 1px rgba(168, 137, 32, 0.466);
+    border-radius: 30px 30px 30px 30px;
+    scale: 0;
+    
 }
